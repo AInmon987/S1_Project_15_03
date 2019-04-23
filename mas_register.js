@@ -28,6 +28,7 @@
 
 */
 window.addEventListener("load", function () {
+      //called the calcart function. 
       calCart();
       document.getElementById("regSubmit").onclick = sessionTest;
       document.getElementById("fnBox").onblur = calCart;
