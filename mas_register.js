@@ -66,25 +66,25 @@ function calCart() {
       var confBanquetCost = confBanquet * 55;
 //Takes all the different things that can be selected, also if anyone bought a package. 
       if (sessionBox.selectedIndex !== -1) {
-            sessionStorage.setItem("confSession", sessionBox[sessionBox.selectedIndex].innerText)
-            sessionStorage.setItem("confSessionCost", sessionBox[sessionBox.selectedIndex].value)
+            sessionStorage.setItem("confSession", sessionBox[sessionBox.selectedIndex].innerText);
+            sessionStorage.setItem("confSessionCost", sessionBox[sessionBox.selectedIndex].value);
             var confSessionCost = sessionBox[sessionBox.selectedIndex].value;
 
       } else {
-            sessionStorage.setItem("confSession", "")
-            sessionStorage.setItem("confSessionCost", 0)
+            sessionStorage.setItem("confSession", "");
+            sessionStorage.setItem("confSessionCost", 0);
             var confSessionCost = 0;
 
       }
 //Takes all the different things that can be selected, also if anyone bought a package. 
       if (document.getElementById("mediaCB").checked == true) {
-            sessionStorage.setItem("confPack", "yes")
-            sessionStorage.setItem("confPackCost", 115)
+            sessionStorage.setItem("confPack", "yes");
+            sessionStorage.setItem("confPackCost", 115);
             var confPackCost = 115;
 
       } else {
-            sessionStorage.setItem("confPack", "no")
-            sessionStorage.setItem("confPackCost", 0)
+            sessionStorage.setItem("confPack", "no");
+            sessionStorage.setItem("confPackCost", 0);
             var confPackCost = 0;
       }
       //keeps and shows the offical amount of the cost put all together. 
